@@ -187,7 +187,7 @@ task.spawn(function()
 		local Button1 = "✅ Yes" 
 		local Button2 = "❌ No"
 
-		local File = `https://raw.githubusercontent.com/alyssagithub/Scripts/refs/heads/main/FrostByte/Games/{PlaceFileName}.lua`
+		local File = `https://raw.githubusercontent.com/mistathehater/Scripts/refs/heads/main/FrostByte/Games/{PlaceFileName}.lua`
 
 		BindableFunction.OnInvoke = function(Button: string)
 			Response = true
@@ -229,7 +229,7 @@ pcall(function()
 	Window = Rayfield:CreateWindow({
 		Name = `FrostByte | {PlaceName} | {ScriptVersion or "Dev Mode"}`,
 		Icon = "snowflake",
-		LoadingTitle = "❄ Brought to you by FrostByte ❄",
+		LoadingTitle = "❄ Brought to you by Mista ❄",
 		LoadingSubtitle = PlaceName,
 		Theme = "DarkBlue",
 
