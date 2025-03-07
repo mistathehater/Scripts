@@ -131,17 +131,6 @@ local Success, Rayfield = pcall(function()
 	return loadstring(game:HttpGet("https://sirius.menu/rayfield"))()
 end)
 
-local function SendNotification(Title: string, Text: string, Duration: number?, Button1: string?, Button2: string?, Callback: BindableFunction?)
-	StarterGui:SetCore("SendNotification", {
-		Title = Title,
-		Text = Text,
-		Duration = Duration or 10,
-		Button1 = Button1,
-		Button2 = Button2,
-		Callback = Callback
-	})
-end
-
 if not Success or not Rayfield or not Rayfield.CreateWindow then
 	SendNotification("Error while loading Rayfield", "Try re-executing or rejoining.")
 	return
