@@ -1,4 +1,4 @@
--- loadstring(game:HttpGet("https://raw.githubusercontent.com/alyssagithub/Scripts/refs/heads/main/FrostByte/Initiate.lua"))()
+-- loadstring(game:HttpGet("https://raw.githubusercontent.com/mistathehater/Scripts/refs/heads/main/FrostByte/Initiate.lua"))()
 
 local getgenv: () -> ({[string]: any}) = getfenv().getgenv
 
@@ -17,9 +17,9 @@ getgenv().PlaceName = PlaceName
 PlaceName = PlaceName:gsub("%b[]", "")
 PlaceName = PlaceName:gsub("[^%a]", "")
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/alyssagithub/Scripts/refs/heads/main/FrostByte/Analytics.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/mistathehater/Scripts/refs/heads/main/FrostByte/Analytics.lua"))()
 
-local Success, Code: string = pcall(game.HttpGet, game, `https://raw.githubusercontent.com/alyssagithub/Scripts/refs/heads/main/FrostByte/Games/{PlaceName}.lua`)
+local Success, Code: string = pcall(game.HttpGet, game, `https://raw.githubusercontent.com/mistathehater/Scripts/refs/heads/main/FrostByte/Games/{PlaceName}.lua`)
 
 if Success and Code:find("ScriptVersion = ") then
 	Notify("Game found, the script is loading.")
@@ -27,7 +27,7 @@ if Success and Code:find("ScriptVersion = ") then
 else
 	Notify("Game not found, loading universal.")
 	getgenv().ScriptVersion = "Universal"
-	Code = game:HttpGet("https://raw.githubusercontent.com/alyssagithub/Scripts/refs/heads/main/FrostByte/Core.lua")
+	Code = game:HttpGet("https://raw.githubusercontent.com/mistathehater/Scripts/refs/heads/main/FrostByte/Core.lua")
 end
 
 getgenv().FrostByteHandleFunction(loadstring(Code))
