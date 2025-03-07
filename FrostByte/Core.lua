@@ -105,7 +105,7 @@ if typeof(TeleportData) == "table" and TeleportData.FrostByteRejoin then
 	return
 end
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/alyssagithub/Scripts/refs/heads/main/FrostByte/Initiate.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/mistathehater/Scripts/refs/heads/main/FrostByte/Initiate.lua"))()
 	
 	]])
 end
