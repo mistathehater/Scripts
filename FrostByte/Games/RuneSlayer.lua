@@ -2,7 +2,7 @@ local getgenv: () -> ({[string]: any}) = getfenv().getgenv
 
 getgenv().ScriptVersion = "v0.0.3"
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/alyssagithub/Scripts/refs/heads/main/FrostByte/Core.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/mistathehater/Scripts/refs/heads/main/FrostByte/Core.lua"))()
 
 type Tab = {
 	CreateSection: (self: Tab, Name: string) -> Section,
